@@ -19,15 +19,25 @@
       box-sizing: border-box;
     }
 
+    /* Base Styles*/
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --Slate-300: hsl(212, 45%, 89%);
+      --Slate-500: hsl(216, 15%, 48%);
+      --Slate-900: hsl(218, 44%, 22%);
+      --primary-font: 'Outfit';
+      --paragraph-font-size: 16px;
+    }
+
     body {
       display: grid;
       place-items: center;
       height: 100vh;
-      background-color: hsl(212, 45%, 89%);
-      font-family: 'Outfit';
+      background-color: var(--Slate-300);
+      font-family: var(--primary-font);
     }
     .container {
-      background-color: white;
+      background-color: var(--white);
       max-width: 350px;
       display: flex;
       flex-direction: column;
@@ -47,16 +57,16 @@
 
     .container h1 {
       font-weight: 700;
-      font-size: 25px;
-      color: hsl(218, 44%, 22%);
-      padding: 0 10px;
+      font-size: 24px;
+      color: var(--Slate-900);
+      padding: 0 20px;
     }
 
     .container p {
-      font-size: 15px;
+      font-size: var(--paragraph-font-size);
       padding: 0 48px 45px;
       font-weight: 400;
-      color: hsl(216, 15%, 48%);
+      color: var(--Slate-500);
     }
 
   </style>

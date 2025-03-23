@@ -10,7 +10,7 @@
   <title>Frontend Mentor | QR code component</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center;}
     .attribution a { color: hsl(228, 45%, 44%); }
 
     * {
@@ -32,14 +32,14 @@
     body {
       display: grid;
       place-items: center;
-      height: 100vh;
+      min-height: 100vh;
       background-color: var(--Slate-300);
       font-family: var(--primary-font);
     }
     
     .container {
       background-color: var(--white);
-      max-width: 350px;
+      max-width: 330px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -49,6 +49,7 @@
       border-radius: 15px;
       text-align: center;
       gap: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     .container img {
@@ -65,7 +66,7 @@
 
     .container p {
       font-size: var(--paragraph-font-size);
-      padding: 0 48px 45px;
+      padding: 0 35px 45px;
       font-weight: 400;
       color: var(--Slate-500);
     }
@@ -74,16 +75,19 @@
 
 </head>
 <body>
-
-  <div class="container">
-    <img src="images/image-qr-code.png" alt="an qr image">
-    <h1>Improve your front-end skills by building projects</h1>
-    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  </div>
-  
-  <!--<div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Allan Kyle</a>.
-  </div>-->
+  <main>
+    <div class="container">
+      <img src="images/image-qr-code.png" alt="QR code for Frontend Mentor">
+      <h1>Improve your front-end skills by building projects</h1>
+      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+    </div>
+    
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Allan Kyle</a>.
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
